@@ -28,8 +28,6 @@ def user(username):
                 letters=letters, 
                 dict=dict, 
                 )
-    # return "<h1>Hello, {}</h1>".format(username.upper())
-    # return "<h1>Hello, {}</h1>".format(username[99])
 
 @app.route('/sign_up')
 def sign_up():
@@ -53,7 +51,6 @@ def login():
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
-
 
 if __name__ == '__main__':
     app.run(debug=True)
