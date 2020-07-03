@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <h1>Hello, {{ username }}</h1>
+        <p>Logged in at {{ time  }}</p>
+
+        <h2>Your name backwards is:</h2>
+        <p>{{ "".join(username[::-1]) | upper }}</p>
+
+        {% if username == "cakehole" %}
+            <h1>Hey, Dude!</h1>
+        {% endif %}
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+{% endblock %}
